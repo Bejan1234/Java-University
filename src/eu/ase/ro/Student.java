@@ -35,6 +35,15 @@ public class Student {
         avgGrade /= grades.length;
         return avgGrade;
     }
+
+    public float getAvgGrade() {
+        float sum = 0;
+        for (float grade : grades) {
+            sum += grade;
+        }
+        return grades.length > 0 ? sum / grades.length : 0;
+    }
+
 //setteri
 
     public void setId(int id) {
