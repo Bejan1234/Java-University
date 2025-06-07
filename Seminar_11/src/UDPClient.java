@@ -37,6 +37,12 @@ public class UDPClient extends Thread {
 
     }
 
+    //Rulezi main() → creează clientul + pornește threadul
+    //
+    //Threadul (run) ascultă răspunsuri de la server
+    //
+    //main() citește mesaje și le trimite
+
     public static void main(String[] args) throws UnknownHostException {
 
         Scanner scanner = new Scanner((System.in));
